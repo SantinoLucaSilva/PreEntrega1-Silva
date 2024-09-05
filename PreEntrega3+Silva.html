@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Viajes</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          margin: 0;
+          padding: 0;
+          background-image: url('/Piriápolis.jpeg.webp'); 
+          background-size: cover;
+          background-attachment: fixed;
+      }
+
+      h1 {
+          text-align: center;
+          color: #f39c12; 
+          margin-top: 20px;
+          font-size: 44px;
+          font-family: 'Playfair Display', serif; 
+          text-transform: uppercase;
+          text-shadow: 2px 2px #2c3e50; 
+          border-bottom: 3px solid #2c3e50;
+          display: inline-block;
+          padding-bottom: 10px;
+      }
+
+      section {
+          width: 60%;
+          margin: 20px auto;
+          background-color: rgba(255, 255, 255, 0.85); 
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+          font-size: 26px;
+          color: #27ae60; 
+          font-family: 'Playfair Display', serif;
+          text-align: center;
+      }
+
+      label {
+          font-size: 18px;
+          color: #34495e;
+          font-weight: bold;
+      }
+
+      input, select, button {
+          display: block;
+          width: 100%;
+          padding: 12px;
+          margin: 10px 0 20px 0;
+          border-radius: 8px;
+          border: 2px solid #bdc3c7;
+          font-size: 16px;
+      }
+
+      input, select {
+          background-color: #fdfdfd;
+      }
+
+      button {
+          background: linear-gradient(45deg, #f39c12, #e74c3c); 
+          color: white;
+          font-size: 18px;
+          cursor: pointer;
+          border: none;
+          transition: background 0.3s ease;
+      }
+
+      button:hover {
+          background: linear-gradient(45deg, #e67e22, #c0392b); 
+      }
+
+      .resultadoOpciones, .resultadoViaje {
+          background-color: #ecf0f1;
+          padding: 15px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          border: 2px solid #2ecc71;
+          font-family: 'Roboto', sans-serif;
+          color: #2c3e50;
+      }
+
+      .destinoItem {
+          border: 1px solid #34495e;
+          background-color: #f9f9f9;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+      }
+
+      .color-colombia {
+          background-color: #f39c12; 
+      }
+
+      .color-brasil {
+          background-color: #27ae60; 
+      }
+
+      .color-argentina {
+          background-color: #3498db; 
+      }
+
+      .color-chile {
+          background-color: #e74c3c; 
+      }
+  </style> 
+</head>
+<body>
+  <h1>Calculadora de Viajes</h1>
+
+  <section>
+      <h2>Arma tu viaje en base a tu presupuesto</h2>
+      <label for="presupuesto">Ingresa tu presupuesto:</label>
+      <input type="number" id="presupuesto" placeholder="Monto en $">
+      
+      <label for="personas">Número de personas que van a viajar:</label>
+      <input type="number" id="personas" placeholder="Cantidad de personas">
+      
+      <button onclick="mostrarOpciones()">Mostrar opciones</button>
+      <p id="resultadoOpciones"></p>
+  </section>
+
+  <hr>
+
+  <section>
+      <h2>Elige tu destino y hospedaje</h2>
+      <label for="destinoSelect">Destino:</label>
+      <select id="destinoSelect" onchange="cargarHospedajes()">
+          <option value="">--Selecciona un destino--</option>
+      </select>
+
+      <label for="hospedajeSelect">Hospedaje:</label>
+      <select id="hospedajeSelect">
+          <option value="">--Selecciona un hospedaje--</option>
+      </select>
+
+      <label for="personasViaje">Número de personas que van a viajar:</label>
+      <input type="number" id="personasViaje" placeholder="Cantidad de personas">
+
+      <button onclick="calcularViaje()">Calcular precio del viaje</button>
+      <p id="resultadoViaje"></p>
+  </section>
+  <script src= "PreEntrega.js"> </script>
+</body>
+</html
