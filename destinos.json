@@ -1,0 +1,37 @@
+[
+    { "nombre": "Colombia", "precio": 350, "hospedajes": [
+        { "nombre": "Hotel Económico", "precio": 560 },
+        { "nombre": "Hotel Lujoso", "precio": 720 },
+        { "nombre": "Hotel 5 Estrellas", "precio": 1050 }
+    ]},
+    { "nombre": "Ecuador", "precio": 240, "hospedajes": [
+        { "nombre": "Hotel Económico", "precio": 145 },
+        { "nombre": "Hotel Lujoso", "precio": 320 },
+        { "nombre": "Hotel 5 Estrellas", "precio": 620 }
+    ]},
+    { "nombre": "Peru", "precio": 180, "hospedajes": [
+        { "nombre": "Hotel Economico", "precio": 140 },
+        { "nombre": "Hotel Lujoso", "precio": 270 },
+        { "nombre": "Hotel 5 Estrellas", "precio": 510 }
+    ]},
+    { "nombre": "Chile", "precio": 200, "hospedajes": [
+        { "nombre": "Hotel Economico", "precio": 310 },
+        { "nombre": "Hotel Lujoso", "precio": 570 },
+        { "nombre": "Hotel 5 Estrellas", "precio": 830 }
+    ]},
+    { "nombre": "Uruguay", "precio": 280, "hospedajes": [
+        { "nombre": "Hotel Economico", "precio": 390 },
+        { "nombre": "Hotel Lujoso", "precio": 490 },
+        { "nombre": "Hotel 5 Estrellas", "precio": 790 }
+    ]},
+    { "nombre": "Brasil", "precio": 380, "hospedajes": [
+        { "nombre": "Hotel Economico", "precio": 400 },
+        { "nombre": "Hotel Lujoso", "precio": 620 },
+        { "nombre": "Hotel 5 Estrellas", "precio": 1110 }
+    ]},
+    { "nombre": "Paraguay", "precio": 150, "hospedajes": [
+        { "nombre": "Hotel Economico", "precio": 110 },
+        { "nombre": "Hotel Lujoso", "precio": 230 },
+        { "nombre": "Hotel 5 Estrellas", "precio": 360 }
+    ]}
+]
